@@ -1,4 +1,3 @@
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-    React.createElement("p", null, "Hello, World! (Declarative - React)")
-);
+const p = document.createElement("p");
+p.textContent = "Hello, World! (Imperative)";
+document.getElementById("root").appendChild(p);
